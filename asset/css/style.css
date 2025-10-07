@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    background: linear-gradient(90deg, #161616, #000e4d, #282828);
+}
+
+.navbar {
+    background: linear-gradient(90deg, #123677, #292183, #6277d4);
+    padding: 0.8rem 1rem;
+}
+
+p h2 {
+    color: #f4f4f4;
+}
+
+.navbar a {
+    color: #fff !important;
+    transition: color 0.3s ease;
+    font-family: "poppins";
+    border-bottom: 2px solid transparent;
+}
+
+
+.nav-link li {
+    font-size: 0.8rem;
+    font-weight: 450;
+    transition: border-bottom 1s ease;
+}
+
+.nav-link li:hover {
+    font-size: 1rem;
+    transition: 0.4s;
+    position: relative;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: #09042676 3px 1px 3px;
+    border-bottom: 2px solid #c6c6c6;
+}
+
+.navbar a:hover {
+    color: #ffffff !important;
+
+
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.section-bg-light {
+    height: 100vh;
+    background: linear-gradient(90deg, #161616, #000e4d, #282828);
+}
+
+.section-bg-gray {
+    height: 100vh;
+    background: linear-gradient(90deg, #161616, #000e4d, #282828);
+}
+
+.section-bg-dark {
+    height: 100vh;
+    background: linear-gradient(90deg, #161616, #000e4d, #282828);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* navbar hamburger */
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-link {
+        display: none !important;
+        flex-direction: column;
+        background: linear-gradient(90deg, #b9cee1, #6193c5);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    #menu-toggle:checked+.hamburger+.nav-link {
+        display: flex !important;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav>.container>ul>li:hover {
+        background-color: black;
+        border-radius: 5px;
+    }
+}
+
+/* hero section */
+.hero {
+    min-height: 100vh;
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e2dcdc;
+}
+
+.hero .btn {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero .btn:hover {
+    box-shadow: 0px 6px 18px rgba(13, 110, 253, 0.3);
+    transform: translateY(-3px);
+    background: #0b5ed7;
+}
+
+/* responsiveness */
+
+@media (max-width: 992px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero .hero-img {
+        margin-top: 30px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+
+/* ABOUT US SECTION */
+
+.about {
+    color: #f4f4f4;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f4f4f4;
+}
+
+.about h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #f4f4f4;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f4f4f4;
+}
+
+
+/* CUSTOM BUTTON */
+
+.btn-about {
+    background: #d6e0fd;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 12px 30px;
+    border: 3px solid #808080;
+}
+
+.btn-about:hover {
+    background: #c9dbfd;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 11px rgba(13, 112, 253, 0.3);
+}
+
+
+/* OUR TEAM SECTION */
+
+
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f4f4f4;
+}
+
+.team-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* custom css untuk section services */
+#services {
+    color: #ffffff;
+}
+
+#services .service-card {
+    border: 3px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+}
+
+#services .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#services .icon i {
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 2.5rem;
+}
+
+#services .icon:hover i {
+    color: #0d6efd;
+    transform: scale(1.2);
+}
+
+/* Section Contact */
+#contact {
+    color: #f4f4f4;
+}
+
+#contact h2 {
+    color: #f4f4f4;
+    font-weight: bold;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #f4f4f4;
+}
+
+/* Contact Info Icons */
+#contact i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Button Styling */
+.btn-contact {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Footer Layout */
+.site-footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px 20px;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* Iframe Area (¼ width) */
+.footer-map {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Footer Info (¾ width) */
+.footer-info {
+  flex: 3 1 600px;
+  max-width: 800px;
+}
+
+.footer-info a {
+  color: #00aced;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-map,
+  .footer-info {
+    max-width: 100%;
+  }
+
+  .footer-map iframe {
+    height: 250px;
+  }
+}
